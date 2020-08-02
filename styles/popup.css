@@ -1,0 +1,7 @@
+.popup-container {
+    width: 30em;
+    height: 20em;
+    background: white;
+    box-sizing: border-box;
+    padding: 1em;
+}

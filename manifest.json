@@ -11,4 +11,4 @@
         "default_popup": "./templates/popup.html"
     },
     "manifest_version": 2
-  }
+}
