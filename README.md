@@ -1,1 +1,2 @@
 # cube-scrambler
+This is a google chrome extension that displays a single scramble for various types of Rubik's cubes! It's designed for casual use, so if you're in the middle of watching a Youtube video or Netflix series, just click on the extension, get a scramble, and have fun!
