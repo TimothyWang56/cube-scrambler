@@ -1,15 +1,18 @@
-let changeColor = document.getElementById('changeColor');
+let scramble = document.getElementById('scramble');
 
-chrome.storage.sync.get('color', function(data) {
-    changeColor.style.backgroundColor = data.color;
-    changeColor.setAttribute('value', data.color);
-});
+const setScrambleText = (text) => {
+    scramble.innerHTML = text;
+}
 
-changeColor.onclick = function(element) {
-    let color = element.target.value;
-    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        chrome.tabs.executeScript(
-            tabs[0].id,
-            {code: 'document.body.style.backgroundColor = "' + color + '";'});
-    });
-};
+const fetchScramble = async () => {
+    fetch('https://scrambler-api.herokuapp.com/3x3x3')
+        .then(res => res.text())
+        .then(result => {
+            const scramblesArray = JSON.parse(result);
+            scramble.innerHTML = scramblesArray[0];
+
+        }
+    );
+}
+
+fetchScramble();
