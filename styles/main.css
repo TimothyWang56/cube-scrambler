@@ -1,0 +1,11 @@
+* {
+    margin: 0em;
+    padding: 0em;
+}
+  
+.text {
+    font-family: monospace;
+    text-align: center;
+    font-size: 1.5em;
+}
+  
