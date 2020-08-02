@@ -2,7 +2,7 @@
     "name": "Cube Scrambler",
     "version": "1.0",
     "description": "Chrome extensions that provides scrambles for all types of cubes!",
-    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "permissions": ["https://scrambler-api.herokuapp.com/*", "activeTab", "declarativeContent", "storage"],
     "background": {
         "scripts": ["./scripts/background.js"],
         "persistent": false
