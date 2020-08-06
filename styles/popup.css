@@ -1,7 +1,26 @@
 .popup-container {
     width: 30em;
-    height: 20em;
-    background: white;
+    height: fit-content;
+    background: rgb(255, 255, 255);
     box-sizing: border-box;
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.button { 
+    border-radius: 1em;
+    width: fit-content;
+    padding: 0.5em;
+    align-self: center;
+    background-color: rgb(211, 177, 255);   
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(180, 124, 253);   
+}
+
+.scramble {
+    padding: 0.5em;
 }
